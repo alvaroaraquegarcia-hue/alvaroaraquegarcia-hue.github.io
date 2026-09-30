@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Herramientas SCHO · Cálculo para Higiene Ocupacional</title>
+<meta name="description" content="Herramientas gratuitas de la Sociedad Colombiana de Higienistas Ocupacionales (SCHO) para evaluar y controlar riesgos higiénicos: agentes químicos, ruido, iluminación y estrés térmico.">
+<meta property="og:title" content="Herramientas SCHO · Cálculo para Higiene Ocupacional">
+<meta property="og:description" content="Herramientas gratuitas para evaluar y controlar riesgos químicos, ruido, iluminación y estrés térmico. Excel, ejemplos resueltos e instructivos.">
+<meta property="og:image" content="logo-scho.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+:root{--blue:#007199;--blue-d:#005574;--tint:#e8f2f6;--orange:#e77725;--green:#a7c83b;--ink:#1f2933;--muted:#5a6570;--line:#d7e0e6;--bg:#f5f8fa}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Calibri,"Segoe UI",Carlito,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+a{color:var(--blue)}
+.hero{background:#fff;border-bottom:1px solid var(--line)}
+.hero .in{max-width:1080px;margin:0 auto;padding:28px 20px 24px;display:flex;gap:28px;align-items:center}
+.hero img{width:120px;height:auto;flex:none}
+.eyebrow{color:var(--orange);font-weight:700;letter-spacing:.18em;font-size:.8rem}
+.hero h1{color:var(--blue);font-size:2rem;line-height:1.15;margin:4px 0 8px}
+.hero p{color:var(--muted);max-width:640px}
+.bar{display:flex;height:5px}.bar i{flex:1}.bar i:nth-child(1){background:var(--blue)}.bar i:nth-child(2){background:var(--orange)}.bar i:nth-child(3){background:var(--green)}
+main{max-width:1080px;margin:0 auto;padding:24px 20px 10px}
+.intro{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:22px}
+.intro p{color:var(--muted);max-width:680px;font-size:.98rem}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:8px;font-size:.95rem;white-space:nowrap}
+.btn:hover{background:var(--blue-d)}
+.btn.sec{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+.btn.sec:hover{background:var(--tint)}
+.tool{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:18px;overflow:hidden}
+.th{display:flex;gap:14px;align-items:flex-start;padding:18px 20px 12px;border-bottom:1px solid var(--line)}
+.ic{flex:none;width:44px;height:44px;border-radius:10px;background:var(--tint);display:flex;align-items:center;justify-content:center;font-size:1.4rem}
+.th h2{font-size:1.3rem;color:var(--blue);line-height:1.2}
+.th .area{font-size:.85rem;color:var(--orange);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.th p{color:var(--muted);font-size:.95rem;margin-top:4px}
+.ver{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line)}
+.ver:last-child{border-bottom:0}
+.vtag{font-weight:700;color:var(--ink)}
+.vtag small{display:block;font-weight:700;font-size:.72rem;color:#fff;background:var(--green);border-radius:999px;padding:1px 8px;width:max-content;margin-top:3px;color:#2f4a00}
+.vdesc{font-size:.93rem;color:var(--ink)}
+.dl{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.dl a{font-size:.85rem;text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:6px 10px;color:var(--ink);background:#fff;white-space:nowrap}
+.dl a:hover{border-color:var(--blue);color:var(--blue)}
+.dl a.zip{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:700}
+.dl a.zip:hover{background:var(--blue-d)}
+.web{padding:16px 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:26px 0}
+.how div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:.93rem}
+.how b{color:var(--blue);display:block;margin-bottom:3px}
+.note{background:#fff7ec;border-left:4px solid var(--orange);padding:12px 16px;border-radius:0 8px 8px 0;font-size:.92rem;color:#5b3a12;margin-bottom:22px}
+footer{max-width:1080px;margin:0 auto;padding:18px 20px 36px;font-size:.85rem;color:var(--muted);text-align:center}
+footer b{color:var(--blue)}
+@media (max-width:720px){
+  .hero .in{flex-direction:column;text-align:center;gap:12px}.hero img{width:96px}.hero h1{font-size:1.6rem}
+  .ver{grid-template-columns:1fr;gap:8px}.dl{justify-content:flex-start}
+}
+</style>
+</head>
+<body>
+<div style="background:#0F4C5C;padding:8px 20px;font-size:.9rem"><a href="../" style="color:#fff;text-decoration:none">Volver a Higiene Ocupacional Aplicada</a></div>
+<header class="hero">
+  <div class="in">
+    <img src="logo-scho.png" alt="Sociedad Colombiana de Higienistas Ocupacionales — SCHO">
+    <div>
+      <div class="eyebrow">COMITÉ ACADÉMICO · HERRAMIENTAS DE CÁLCULO</div>
+      <h1>Herramientas SCHO para Higiene Ocupacional</h1>
+      <p>Herramientas gratuitas para evaluar y controlar los principales riesgos higiénicos: agentes químicos, ruido, iluminación y estrés térmico. Cada una incluye el libro de Excel, un ejemplo resuelto y un instructivo con sus fundamentos técnicos.</p>
+    </div>
+  </div>
+  <div class="bar"><i></i><i></i><i></i></div>
+</header>
+
+<main>
+  <div class="intro">
+    <p>Seleccione la herramienta y la versión. Las versiones más recientes incluyen todas las funciones de las anteriores; las primeras versiones son útiles para aprender el método paso a paso.</p>
+    <a class="btn" href="descargas/Herramientas_SCHO_completo.zip" download>Descargar todo (ZIP)</a>
+  </div>
+
+  <!-- VaporRisk -->
+  <section class="tool" id="vaporrisk">
+    <div class="th"><div class="ic">🧪</div><div>
+      <div class="area">Agentes químicos · Ventilación</div>
+      <h2>VaporRisk</h2>
+      <p>Riesgo químico por inhalación de mezclas de líquidos volátiles y diseño de controles de ingeniería.</p></div></div>
+    <div class="ver"><div class="vtag">Versión 3<small>RECOMENDADA</small></div>
+      <div class="vdesc">Todo lo de la V2, más la evaluación de cumplimiento con concentraciones medidas en campo (regla de mezclas de la ACGIH), la selección de protección respiratoria por factor de protección asignado (APF) y un plan de control automático.</div>
+      <div class="dl"><a href="descargas/VaporRisk_V3.xlsx" download>Excel</a><a href="descargas/VaporRisk_V3_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/VaporRisk_V3_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/VaporRisk_V3.zip" download>ZIP</a></div></div>
+    <div class="ver"><div class="vtag">Versión 2</div>
+      <div class="vdesc">Todo lo de la V1, más el dimensionamiento de la ventilación por dilución (balance de masa) y de la extracción localizada (LEV) según la ACGIH, con calculadora de presión de vapor (Antoine) y tabla NIOSH.</div>
+      <div class="dl"><a href="descargas/VaporRisk_V2.xlsx" download>Excel</a><a href="descargas/VaporRisk_V2_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/VaporRisk_V2_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/VaporRisk_V2.zip" download>ZIP</a></div></div>
+    <div class="ver"><div class="vtag">Versión 1</div>
+      <div class="vdesc">Estimación del riesgo por inhalación de mezclas a partir de las presiones de vapor (ley de Raoult) y los TLV-TWA: identifica el componente de mayor aporte y sugiere la banda de control.</div>
+      <div class="dl"><a href="descargas/VaporRisk_V1.xlsx" download>Excel</a><a href="descargas/VaporRisk_V1_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/VaporRisk_V1_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/VaporRisk_V1.zip" download>ZIP</a></div></div>
+  </section>
+
+  <!-- NoiseRisk -->
+  <section class="tool" id="noiserisk">
+    <div class="th"><div class="ic">🔊</div><div>
+      <div class="area">Ruido</div>
+      <h2>NoiseRisk</h2>
+      <p>Estimación del riesgo y diseño de controles para la exposición a ruido ocupacional.</p></div></div>
+    <div class="ver"><div class="vtag">Versión 2<small>RECOMENDADA</small></div>
+      <div class="vdesc">Todo lo de la V1, más la dosimetría y el cálculo de dosis/TWA, la selección y verificación de protección auditiva (NRR) y un plan de control automático.</div>
+      <div class="dl"><a href="descargas/NoiseRisk_V2.xlsx" download>Excel</a><a href="descargas/NoiseRisk_V2_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/NoiseRisk_V2_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/NoiseRisk_V2.zip" download>ZIP</a></div></div>
+    <div class="ver"><div class="vtag">Versión 1</div>
+      <div class="vdesc">Acondicionamiento acústico de recintos (Sabine), aislamiento de cerramientos (pérdida por transmisión, TL) y diseño de barreras acústicas (atenuación por inserción, IL).</div>
+      <div class="dl"><a href="descargas/NoiseRisk_V1.xlsx" download>Excel</a><a href="descargas/NoiseRisk_V1_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/NoiseRisk_V1_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/NoiseRisk_V1.zip" download>ZIP</a></div></div>
+  </section>
+
+  <!-- LuxRisk -->
+  <section class="tool" id="luxrisk">
+    <div class="th"><div class="ic">💡</div><div>
+      <div class="area">Iluminación</div>
+      <h2>LuxRisk</h2>
+      <p>Diseño y verificación de sistemas de iluminación interior por el método del flujo luminoso.</p></div></div>
+    <div class="ver"><div class="vtag">Versión 2<small>RECOMENDADA</small></div>
+      <div class="vdesc">Todo lo de la V1, más la tabla de iluminancia y UGR por tarea visual, el factor de mantenimiento desagregado, la verificación de uniformidad y deslumbramiento (UGR) y un plan de control automático.</div>
+      <div class="dl"><a href="descargas/LuxRisk_V2.xlsx" download>Excel</a><a href="descargas/LuxRisk_V2_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/LuxRisk_V2_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/LuxRisk_V2.zip" download>ZIP</a></div></div>
+    <div class="ver"><div class="vtag">Versión 1</div>
+      <div class="vdesc">Cálculo del número y la distribución de luminarias y de la iluminancia real proyectada frente al requerimiento normativo.</div>
+      <div class="dl"><a href="descargas/LuxRisk_V1.xlsx" download>Excel</a><a href="descargas/LuxRisk_V1_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/LuxRisk_V1_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/LuxRisk_V1.zip" download>ZIP</a></div></div>
+  </section>
+
+  <!-- HeatStressRisk -->
+  <section class="tool" id="heatstressrisk">
+    <div class="th"><div class="ic">🌡️</div><div>
+      <div class="area">Estrés térmico</div>
+      <h2>HeatStressRisk</h2>
+      <p>Evaluación del estrés y la tensión térmica y diseño de controles.</p></div></div>
+    <div class="ver"><div class="vtag">Versión 2<small>RECOMENDADA</small></div>
+      <div class="vdesc">Evaluación según las directrices de la ACGIH (TLV y Límite de Acción, aclimatación y ropa), análisis detallado para exposiciones heterogéneas, tensión térmica predicha (PHS, ISO 7933) y plan de control automático.</div>
+      <div class="dl"><a href="descargas/HeatStressRisk_V2.xlsx" download>Excel</a><a href="descargas/HeatStressRisk_V2_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/HeatStressRisk_V2_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/HeatStressRisk_V2.zip" download>ZIP</a></div></div>
+    <div class="ver"><div class="vtag">Versión 1</div>
+      <div class="vdesc">WBGT ponderado en el tiempo (TWA) para hasta cuatro fases de trabajo, con ajuste por ropa, y simulador de pantallas reflectivas contra el calor radiante.</div>
+      <div class="dl"><a href="descargas/HeatStressRisk_V1.xlsx" download>Excel</a><a href="descargas/HeatStressRisk_V1_Ejemplo.xlsx" download>Ejemplo</a><a href="descargas/HeatStressRisk_V1_Instructivo.pdf" target="_blank" rel="noopener">Instructivo</a><a class="zip" href="descargas/HeatStressRisk_V1.zip" download>ZIP</a></div></div>
+  </section>
+
+  <!-- WBGT Colombia -->
+  <section class="tool" id="wbgt">
+    <div class="th"><div class="ic">📱</div><div>
+      <div class="area">Estrés térmico · Aplicación web</div>
+      <h2>WBGT Colombia</h2>
+      <p>Calculadora web, sin instalación, para estimar el WBGT en tiempo real en 10 ciudades colombianas, con datos propios o con mediciones de monitor (ISO 7243), y evaluarlo según la ACGIH. Funciona en celulares y computadores.</p></div></div>
+    <div class="web">
+      <div class="vdesc"><b>Versión 1.0</b> · Modelo de Liljegren, ISO 7243 y criterios ACGIH.</div>
+      <div class="dl"><a class="zip" href="https://alvaroaraquegarcia-hue.github.io/wbgt-colombia/" target="_blank" rel="noopener">Abrir calculadora</a><a href="descargas/WBGT_Colombia_V1_Guia.pdf" target="_blank" rel="noopener">Guía de uso (PDF)</a></div>
+    </div>
+  </section>
+
+  <div class="how">
+    <div><b>1. Descargue</b>El libro de Excel, el ejemplo resuelto y el instructivo, o el ZIP con los tres.</div>
+    <div><b>2. Revise el ejemplo</b>Muestra la herramienta diligenciada con un caso real y sus resultados.</div>
+    <div><b>3. Diligencie sus datos</b>Solo en las celdas de entrada (fondo amarillo); las demás se calculan automáticamente.</div>
+  </div>
+
+  <div class="note">Las herramientas son un apoyo para la gestión del riesgo. No reemplazan la medición en campo ni el criterio de un profesional competente en higiene ocupacional. Requieren Microsoft Excel o una hoja de cálculo compatible.</div>
+</main>
+
+<footer>
+  Herramientas gratuitas de la <b>Sociedad Colombiana de Higienistas Ocupacionales — SCHO</b><br>
+  Desarrolladas por Álvaro Araque García · Comité Académico · Septiembre de 2026<br>
+  Comentarios y sugerencias: <a href="mailto:alvaroaraquegarcia@hotmail.com">alvaroaraquegarcia@hotmail.com</a> · <a href="https://www.scho.org.co/">www.scho.org.co</a>
+</footer>
+</body>
+</html>
