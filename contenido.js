@@ -31,10 +31,10 @@ window.CONTENIDO = {
 
   /* Documentos técnicos */
   documentos: [
-    { titulo: 'WBGT Colombia V1 — Guía de uso y fundamentos técnicos', tipo: 'PDF', enlace: 'herramientas/descargas/WBGT_Colombia_V1/WBGT_Colombia_V1_Guia.pdf' },
-    { titulo: 'VaporRisk V3 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/VaporRisk_V3/VaporRisk_V3_Instructivo.pdf' },
-    { titulo: 'NoiseRisk V2 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/NoiseRisk_V2/NoiseRisk_V2_Instructivo.pdf' },
-    { titulo: 'LuxRisk V2 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/LuxRisk_V2/LuxRisk_V2_Instructivo.pdf' },
-    { titulo: 'HeatStressRisk V2 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/HeatStressRisk_V2/HeatStressRisk_V2_Instructivo.pdf' }
+    { titulo: 'WBGT Colombia V1 — Guía de uso y fundamentos técnicos', tipo: 'PDF', enlace: 'herramientas/descargas/WBGT_Colombia_V1_Guia.pdf' },
+    { titulo: 'VaporRisk V3 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/VaporRisk_V3_Instructivo.pdf' },
+    { titulo: 'NoiseRisk V2 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/NoiseRisk_V2_Instructivo.pdf' },
+    { titulo: 'LuxRisk V2 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/LuxRisk_V2_Instructivo.pdf' },
+    { titulo: 'HeatStressRisk V2 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/HeatStressRisk_V2_Instructivo.pdf' }
   ]
 };
