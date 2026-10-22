@@ -9,6 +9,13 @@ window.CONTENIDO = {
   /* Novedades: lo más reciente primero */
   novedades: [
     {
+      fecha: '2026-10-21',
+      titulo: 'Documentos técnicos: benceno en Oil & Gas y protección respiratoria en soldadores',
+      texto: 'Dos artículos de colegas: un abordaje sistemático de la exposición ocupacional a benceno en una empresa del sector Oil & Gas (Tocaruncho Rodríguez H. et al.) y un estudio cualitativo sobre los factores que determinan el uso de protección respiratoria en soldadores de una microempresa de Bogotá (Bejarano Ochoa N. y Valderrama Sánchez H.).',
+      enlace: '#documentos',
+      textoEnlace: 'Ver los documentos'
+    },
+    {
       fecha: '2026-10-20',
       titulo: 'Nueva herramienta: NeumoRisk V1',
       texto: 'Evaluación y control del riesgo por sílice cristalina respirable, polvo de carbón y asbesto, basada en la GATI-NEUMO y en la Guía Técnica de Sílice Cristalina (Resolución 2467 de 2022). Incluye GES, estadística del muestreo, plan de control, protección respiratoria y vigilancia médica. Autores: Álvaro Araque García y Luis Guillermo Araque Muñoz.',
@@ -38,6 +45,8 @@ window.CONTENIDO = {
 
   /* Documentos técnicos */
   documentos: [
+    { titulo: 'Exposición ocupacional a benceno en una empresa del sector Oil & Gas — Tocaruncho Rodríguez H. et al.', tipo: 'PDF', enlace: 'documentos/Benceno_Oil_Gas_Tocaruncho.pdf' },
+    { titulo: 'Uso de protección respiratoria en soldadores de una microempresa metalmecánica — Bejarano Ochoa N. y Valderrama Sánchez H.', tipo: 'PDF', enlace: 'documentos/EPPr_Soldadores_Bejarano_Valderrama.pdf' },
     { titulo: 'NeumoRisk V1 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/NeumoRisk_V1_Instructivo.pdf' },
     { titulo: 'WBGT Colombia V1 — Guía de uso y fundamentos técnicos', tipo: 'PDF', enlace: 'herramientas/descargas/WBGT_Colombia_V1_Guia.pdf' },
     { titulo: 'VaporRisk V3 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/VaporRisk_V3_Instructivo.pdf' },
