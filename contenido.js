@@ -9,6 +9,13 @@ window.CONTENIDO = {
   /* Novedades: lo más reciente primero */
   novedades: [
     {
+      fecha: '2026-11-03',
+      titulo: 'Curso en video: Control de Sustancias Peligrosas',
+      texto: 'Publicamos la Parte 1 de 8 del curso Control de Sustancias Peligrosas: qué es el control, razones para controlar, vías de ingreso y jerarquía de controles. Las siguientes partes se publicarán periódicamente en el canal de YouTube Higiene Ocupacional Aplicada.',
+      enlace: '#presentaciones',
+      textoEnlace: 'Ver el video'
+    },
+    {
       fecha: '2026-10-28',
       titulo: 'Nueva herramienta: DustRisk V1',
       texto: 'Evaluación y control de la exposición a 45 polvos minerales y metales (cemento, cal, caolín, talco, óxidos metálicos, manganeso, plomo, cadmio, cromo, níquel, cobalto, berilio y otros) con los TLV y BEI de la ACGIH 2026. Incluye GES, estadística del muestreo, mezclas, plan de control, protección respiratoria y vigilancia médica. Autor: Álvaro Araque García.',
@@ -47,6 +54,7 @@ window.CONTENIDO = {
 
   /* Presentaciones grabadas: youtube = código del video (lo que va después de "v=" en el enlace) */
   videos: [
+    { fecha: '2026-11-03', titulo: 'Control de Sustancias Peligrosas · Parte 1 de 8: Introducción al control', youtube: 'JzpIManTXAM', descripcion: 'Qué es el control, razones para controlar, vías de ingreso de los contaminantes y jerarquía de controles.' },
     // { fecha: '2026-10-15', titulo: 'Cómo usar VaporRisk V3', youtube: 'XXXXXXXXXXX', descripcion: 'Recorrido por la herramienta con un caso real.' },
   ],
 
