@@ -9,6 +9,13 @@ window.CONTENIDO = {
   /* Novedades: lo más reciente primero */
   novedades: [
     {
+      fecha: '2026-11-10',
+      titulo: 'Curso en video: Parte 2 de 8, Sustitución y controles en la fuente',
+      texto: 'Nueva parte del curso Control de Sustancias Peligrosas: sustitución de sustancias, presión de vapor, contención, pantallas, aisladores, guanteras, sistemas de transferencia y manipulación remota.',
+      enlace: '#presentaciones',
+      textoEnlace: 'Ver el video'
+    },
+    {
       fecha: '2026-11-03',
       titulo: 'Curso en video: Control de Sustancias Peligrosas',
       texto: 'Publicamos la Parte 1 de 8 del curso Control de Sustancias Peligrosas: qué es el control, razones para controlar, vías de ingreso y jerarquía de controles. Las siguientes partes se publicarán periódicamente en el canal de YouTube Higiene Ocupacional Aplicada.',
@@ -55,6 +62,7 @@ window.CONTENIDO = {
   /* Presentaciones grabadas: youtube = código del video (lo que va después de "v=" en el enlace) */
   videos: [
     { fecha: '2026-11-03', titulo: 'Control de Sustancias Peligrosas · Parte 1 de 8: Introducción al control', youtube: 'JzpIManTXAM', descripcion: 'Qué es el control, razones para controlar, vías de ingreso de los contaminantes y jerarquía de controles.' },
+    { fecha: '2026-11-10', titulo: 'Control de Sustancias Peligrosas · Parte 2 de 8: Sustitución y controles en la fuente', youtube: 'y_aHrJVnfxY', descripcion: 'Sustitución de sustancias, presión de vapor, contención, pantallas, aisladores, guanteras, sistemas de transferencia y manipulación remota.' },
     // { fecha: '2026-10-15', titulo: 'Cómo usar VaporRisk V3', youtube: 'XXXXXXXXXXX', descripcion: 'Recorrido por la herramienta con un caso real.' },
   ],
 
