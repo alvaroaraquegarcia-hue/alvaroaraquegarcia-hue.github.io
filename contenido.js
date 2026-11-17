@@ -9,6 +9,13 @@ window.CONTENIDO = {
   /* Novedades: lo más reciente primero */
   novedades: [
     {
+      fecha: '2026-11-17',
+      titulo: 'Curso en video: Parte 3 de 8, Fundamentos del aire y la ventilación',
+      texto: 'Nueva parte del curso Control de Sustancias Peligrosas: composición y densidad del aire, caudal, presiones estática, de velocidad y total, y velocidad del aire en la impulsión y la extracción.',
+      enlace: '#presentaciones',
+      textoEnlace: 'Ver el video'
+    },
+    {
       fecha: '2026-11-10',
       titulo: 'Curso en video: Parte 2 de 8, Sustitución y controles en la fuente',
       texto: 'Nueva parte del curso Control de Sustancias Peligrosas: sustitución de sustancias, presión de vapor, contención, pantallas, aisladores, guanteras, sistemas de transferencia y manipulación remota.',
@@ -63,6 +70,7 @@ window.CONTENIDO = {
   videos: [
     { fecha: '2026-11-03', titulo: 'Control de Sustancias Peligrosas · Parte 1 de 8: Introducción al control', youtube: 'JzpIManTXAM', descripcion: 'Qué es el control, razones para controlar, vías de ingreso de los contaminantes y jerarquía de controles.' },
     { fecha: '2026-11-10', titulo: 'Control de Sustancias Peligrosas · Parte 2 de 8: Sustitución y controles en la fuente', youtube: 'y_aHrJVnfxY', descripcion: 'Sustitución de sustancias, presión de vapor, contención, pantallas, aisladores, guanteras, sistemas de transferencia y manipulación remota.' },
+    { fecha: '2026-11-17', titulo: 'Control de Sustancias Peligrosas · Parte 3 de 8: Fundamentos del aire y la ventilación', youtube: 'D6mqWYppnOs', descripcion: 'Composición y densidad del aire, caudal, presiones estática, de velocidad y total, y velocidad del aire en la impulsión y la extracción.' },
     // { fecha: '2026-10-15', titulo: 'Cómo usar VaporRisk V3', youtube: 'XXXXXXXXXXX', descripcion: 'Recorrido por la herramienta con un caso real.' },
   ],
 
