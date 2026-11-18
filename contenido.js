@@ -9,6 +9,13 @@ window.CONTENIDO = {
   /* Novedades: lo más reciente primero */
   novedades: [
     {
+      fecha: '2026-11-18',
+      titulo: 'Nueva herramienta: VibraRisk V1.1',
+      texto: 'Evaluación y control de la exposición a vibración de cuerpo entero y mano-brazo con los TLV de la ACGIH 2026 (cuerpo entero adoptado en 2026) y la guía de usuario de la ACGIH. Incluye combinación de varias fuentes, valor de dosis de vibración (VDV), factor de cresta para decidir cuándo se requiere el VDV, tiempos diarios permitidos, comparación con la Directiva 2002/44/CE y plan de control. Revisada por colegas expertos en vibraciones. Autores: Álvaro Araque García y Luis Guillermo Araque Muñoz.',
+      enlace: 'herramientas/index.html#vibrarisk',
+      textoEnlace: 'Descargar VibraRisk'
+    },
+    {
       fecha: '2026-11-17',
       titulo: 'Curso en video: Parte 3 de 8, Fundamentos del aire y la ventilación',
       texto: 'Nueva parte del curso Control de Sustancias Peligrosas: composición y densidad del aire, caudal, presiones estática, de velocidad y total, y velocidad del aire en la impulsión y la extracción.',
@@ -78,6 +85,7 @@ window.CONTENIDO = {
   documentos: [
     { titulo: 'Exposición ocupacional a benceno en una empresa del sector Oil & Gas — Tocaruncho Rodríguez H. et al.', tipo: 'PDF', enlace: 'documentos/Benceno_Oil_Gas_Tocaruncho.pdf' },
     { titulo: 'Uso de protección respiratoria en soldadores de una microempresa metalmecánica — Bejarano Ochoa N. y Valderrama Sánchez H.', tipo: 'PDF', enlace: 'documentos/EPPr_Soldadores_Bejarano_Valderrama.pdf' },
+    { titulo: 'VibraRisk V1.1 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/VibraRisk_V1.1_Instructivo.pdf' },
     { titulo: 'DustRisk V1 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/DustRisk_V1_Instructivo.pdf' },
     { titulo: 'NeumoRisk V1 — Instructivo de uso', tipo: 'PDF', enlace: 'herramientas/descargas/NeumoRisk_V1_Instructivo.pdf' },
     { titulo: 'WBGT Colombia V1 — Guía de uso y fundamentos técnicos', tipo: 'PDF', enlace: 'herramientas/descargas/WBGT_Colombia_V1_Guia.pdf' },
