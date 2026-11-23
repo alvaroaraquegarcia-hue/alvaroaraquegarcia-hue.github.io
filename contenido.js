@@ -9,6 +9,13 @@ window.CONTENIDO = {
   /* Novedades: lo más reciente primero */
   novedades: [
     {
+      fecha: '2026-11-23',
+      titulo: 'Curso en video: Parte 4 de 8, Ventilación general por dilución',
+      texto: 'Nueva parte del curso Control de Sustancias Peligrosas: caudal de dilución para proteger la salud, mezclas de contaminantes, prevención de incendios y explosiones, renovaciones por hora y cinco ejemplos resueltos.',
+      enlace: '#presentaciones',
+      textoEnlace: 'Ver el video'
+    },
+    {
       fecha: '2026-11-18',
       titulo: 'Nueva herramienta: VibraRisk V1.1',
       texto: 'Evaluación y control de la exposición a vibración de cuerpo entero y mano-brazo con los TLV de la ACGIH 2026 (cuerpo entero adoptado en 2026) y la guía de usuario de la ACGIH. Incluye combinación de varias fuentes, valor de dosis de vibración (VDV), factor de cresta para decidir cuándo se requiere el VDV, tiempos diarios permitidos, comparación con la Directiva 2002/44/CE y plan de control. Revisada por colegas expertos en vibraciones. Autores: Álvaro Araque García y Luis Guillermo Araque Muñoz.',
@@ -78,6 +85,7 @@ window.CONTENIDO = {
     { fecha: '2026-11-03', titulo: 'Control de Sustancias Peligrosas · Parte 1 de 8: Introducción al control', youtube: 'JzpIManTXAM', descripcion: 'Qué es el control, razones para controlar, vías de ingreso de los contaminantes y jerarquía de controles.' },
     { fecha: '2026-11-10', titulo: 'Control de Sustancias Peligrosas · Parte 2 de 8: Sustitución y controles en la fuente', youtube: 'y_aHrJVnfxY', descripcion: 'Sustitución de sustancias, presión de vapor, contención, pantallas, aisladores, guanteras, sistemas de transferencia y manipulación remota.' },
     { fecha: '2026-11-17', titulo: 'Control de Sustancias Peligrosas · Parte 3 de 8: Fundamentos del aire y la ventilación', youtube: 'D6mqWYppnOs', descripcion: 'Composición y densidad del aire, caudal, presiones estática, de velocidad y total, y velocidad del aire en la impulsión y la extracción.' },
+    { fecha: '2026-11-23', titulo: 'Control de Sustancias Peligrosas · Parte 4 de 8: Ventilación general por dilución', youtube: 'zUOdBp1c3RI', descripcion: 'Caudal de dilución para proteger la salud, mezclas de contaminantes, prevención de incendios y explosiones, renovaciones por hora y cinco ejemplos resueltos.' },
     // { fecha: '2026-10-15', titulo: 'Cómo usar VaporRisk V3', youtube: 'XXXXXXXXXXX', descripcion: 'Recorrido por la herramienta con un caso real.' },
   ],
 
